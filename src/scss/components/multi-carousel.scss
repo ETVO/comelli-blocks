@@ -1,0 +1,66 @@
+
+
+.multi-carousel {
+    .carousel-inner {
+        .carousel-item {
+            &.active,
+            &-next,
+            &-prev {
+                display: flex;
+                z-index: 1;
+            }
+
+            &-end,
+            &-start {
+                z-index: 0;
+
+                &:not(.active) {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}
+
+/* medium and up screens */
+@media (min-width: 1200px) {
+    .multi-carousel {
+        .carousel-inner {
+            .carousel-item {
+                &-end.active,
+                &-next {
+                    transform: translateX(33%);
+                }
+
+                &-start.active,
+                &-prev {
+                    transform: translateX(-33%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1199px) {
+    .multi-carousel {
+        .carousel-inner {
+            .carousel-item > div {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+
+                &-end.active,
+                &-next {
+                    transform: translateX(100%); 
+                }
+
+                &-start.active,
+                &-prev {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}

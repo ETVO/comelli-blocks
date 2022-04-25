@@ -1,0 +1,27 @@
+{
+    "slug": "hero",
+    "title": "Hero",
+    "desc": "Hero em Carrossel",
+    "icon": " bi bi-code",
+    "categ": "comelliblock",
+    "usesInner": true,
+    "attrs": {
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Banners"
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "comelliblock/banner" ],
+            "label": "Banners"
+        }
+    ],
+    "children": [
+        {
+            "path": "banner/"
+        }
+    ]
+}
