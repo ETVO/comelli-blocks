@@ -70,8 +70,18 @@ import data from "./blocks.json";
 
             block.name = block.categ + "/" + block.slug;
 
+            block.parentBlocks = null
             if (typeof block.parent != "undefined") {
-                block.parentName = (typeof block.parent != "undefined") ? block.categ + '/' + block.parent : '';
+                block.parentBlocks = []
+                if(Array.isArray(block.parent)) {
+                    // If parent attribute is an array, block has more than one parent
+                    block.parent.forEach(parentName => {
+                        block.parentBlocks.push(block.categ + '/' + parentName)
+                    })
+                }
+                else {
+                    block.parentBlocks.push(block.categ + '/' + block.parent)
+                }
             }
 
             const renderJSX = block.render == "JSX";
@@ -80,7 +90,7 @@ import data from "./blocks.json";
                 title: block.title,
                 description: block.desc,
                 icon: block.icon,
-                parent: block.parentName,
+                parent: block.parentBlocks,
                 category: block.categ,
 
                 attributes: block.attrs,
