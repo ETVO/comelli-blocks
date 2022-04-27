@@ -1,7 +1,8 @@
 <?php
+
 /**
  * Plugin Name: Blocos Comelli
- * Description: Blocos de layout criados exclusivamente para o site da Comelli Construções
+ * Description: Blocos de layout criados exclusivamente para o site da Comelli Construções. Parceria com ImobMark.
  * Author: MinimalQ
  * Author URI: https://linkedin.com/in/estevaoprolim/
  * Version: 1.0
@@ -11,8 +12,8 @@
  */
 
 // Exit if accessed directly.
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+if (!defined('ABSPATH')) {
+    exit;
 }
 
 // Core constants 
@@ -23,7 +24,8 @@ define("PLUGIN_CLASS", "Comelli_Blocks");
 /**
  * Comelli Blocks plugin
  */
-final class Comelli_Blocks {
+final class Comelli_Blocks
+{
 
     /**
      * Setup plugin
@@ -44,7 +46,7 @@ final class Comelli_Blocks {
         // Enqueue scripts
         add_action('admin_enqueue_scripts', array(PLUGIN_CLASS, 'plugin_admin_css'));
         add_action('admin_enqueue_scripts', array(PLUGIN_CLASS, 'plugin_admin_js'));
-        
+
         // Filter to add custom block category
         add_filter('block_categories', array(PLUGIN_CLASS, 'custom_blocks_category'), 10, 2);
     }
@@ -54,8 +56,9 @@ final class Comelli_Blocks {
      *
      * @since 1.0
      */
-    public static function plugin_constants() {
-        
+    public static function plugin_constants()
+    {
+
         // JS and CSS paths
         define('PLUGIN_CSS_URL', PLUGIN_URL . 'assets/css/');
         define('PLUGIN_JS_URL', PLUGIN_URL . 'assets/js/');
@@ -73,7 +76,8 @@ final class Comelli_Blocks {
      *
      * @since 1.0
      */
-    public static function plugin_blocks() {
+    public static function plugin_blocks()
+    {
 
         $dir = PLUGIN_BLOCKS_DIR;
 
@@ -85,12 +89,13 @@ final class Comelli_Blocks {
      *
      * @since 1.0
      */
-    public static function plugin_css() {
+    public static function plugin_css()
+    {
         $dir = PLUGIN_CSS_URL;
 
         // Registering the blocks.css for frontend + backend
         wp_enqueue_style(
-            'plugin-blocks-css', 
+            'plugin-blocks-css',
             $dir . 'blocks.css',
             is_admin() ? array('wp-editor') : null,
             null
@@ -102,7 +107,8 @@ final class Comelli_Blocks {
      *
      * @since 1.0
      */
-    public static function plugin_js() {
+    public static function plugin_js()
+    {
         $dir = PLUGIN_JS_URL;
 
         // Registering the blocks.js file in the dist folder
@@ -114,30 +120,32 @@ final class Comelli_Blocks {
             true
         );
     }
-    
+
     /**
      * Enqueue plugin admin CSS
      * 
      * @since 1.0
      */
-    public static function plugin_admin_css() {
+    public static function plugin_admin_css()
+    {
         $dir = PLUGIN_CSS_URL;
 
         // Registering the editor.css for backend
         wp_enqueue_style(
-            'plugin-editor-css', 
+            'plugin-editor-css',
             $dir . 'editor.css',
             array('wp-edit-blocks'),
             null
         );
     }
-    
+
     /**
      * Enqueue plugin admin JS
      *
      * @since 1.0
      */
-    public static function plugin_admin_js() {
+    public static function plugin_admin_js()
+    {
         $dir = PLUGIN_JS_URL;
 
         // Registering the blocks.js file in the dist folder
@@ -169,15 +177,16 @@ final class Comelli_Blocks {
      * @return array Updated list of block categories
      * @since 1.0
      */
-    public static function custom_blocks_category($categories, $post) {
+    public static function custom_blocks_category($categories, $post)
+    {
         return array_merge(
-            $categories,
             array(
                 array(
                     'slug' => 'comelliblock',
                     'title' => __("Blocos Comelli")
                 )
             ),
+            $categories,
         );
     }
 }
