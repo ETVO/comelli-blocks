@@ -1,0 +1,99 @@
+@import "./slide/block.scss";
+
+$tilt: 25vh;
+$tilt-lg: 15vh;
+$tilt-md: 10vh;
+
+.comelli-slider {
+    .content {
+        background: #4d5e66;
+        padding: calc($tilt + 1rem) 0 calc($tilt + 2rem);
+        clip-path: polygon(0% $tilt, 100% 0%, 100% calc(100% - $tilt), 0% 100%);
+
+        .title {
+            color: #ffe14d;
+            font-weight: 500;
+            letter-spacing: -1.12px;
+            margin-bottom: 2.5rem;
+            font-size: calc(1.75rem + 1.25vw);
+        }
+
+        .carousel {
+            .carousel-inner {
+                width: 85%;
+                margin: 0 auto;
+            }
+
+            .carousel-control {
+                &-prev,
+                &-next {
+                    width: 7.5%;
+                    opacity: 1;
+
+                    &-icon {
+                        background-image: unset;
+                        transition: transform 0.2s;
+
+                        &::before {
+                            font-size: 1.5rem;
+                        }
+                    }
+
+                    &:hover,
+                    &:active {
+                        .carousel-control-prev-icon,
+                        .carousel-control-next-icon {
+                            transform: scale(1.15);
+                        }
+                    }
+                }
+
+                &-next-icon::before {
+                    font-family: bootstrap-icons;
+                    content: "\f285";
+                }
+                &-prev-icon::before {
+                    font-family: bootstrap-icons;
+                    content: "\f284";
+                }
+            }
+
+            .carousel-indicators {
+                position: relative;
+                margin-top: 1rem;
+
+                button {
+                    height: 10px;
+                    width: 30px;
+                    border: none;
+                    border-radius: 5px;
+                    margin: 0 0.25rem;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .short-sbpe {
+        .content {
+            padding: calc($tilt-lg + 2rem) 0 calc($tilt-lg + 1rem);
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .short-sbpe {
+        .content {
+            padding: calc($tilt-md + 2rem) 0 calc($tilt-md + 1rem);
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .short-sbpe {
+        .content {
+            padding: calc($tilt-md + 3rem) 0 calc($tilt-md + 2rem);
+        }
+    }
+}

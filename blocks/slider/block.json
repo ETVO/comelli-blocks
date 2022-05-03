@@ -1,0 +1,40 @@
+{
+    "slug": "slider",
+    "title": "Slider",
+    "desc": "Título e fotos",
+    "icon": " bi bi-view-list",
+    "categ": "comelliblock",
+    "usesInner": true,
+    "attrs": {
+        "title": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Conteúdo"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "title",
+            "title": "Slides"
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "comelliblock/slide" ],
+            "label": "Slides"
+        }
+    ],
+    "children": [
+        {
+            "path": "slide/"
+        }
+    ]
+}

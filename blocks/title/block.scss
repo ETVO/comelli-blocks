@@ -1,0 +1,40 @@
+.comelli-title {
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+        max-height: 400px;
+        min-height: 150px;
+    }
+
+    .overlay {
+        padding: 2rem 0;
+        background-color: rgba(#243740, 0.65);
+
+        .inner {
+            margin: auto;
+
+            .title {
+                color: #ffe14d;
+                text-transform: uppercase;
+                letter-spacing: 11.2px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 576px) {
+    .comelli-title {
+        .overlay {
+            .inner {
+                .title {
+                    letter-spacing: 5.7px;
+                }
+            }
+        }
+    }
+}

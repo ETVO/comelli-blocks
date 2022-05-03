@@ -2,7 +2,7 @@
     "slug": "hero",
     "title": "Hero",
     "desc": "Hero em Carrossel",
-    "icon": " bi bi-code",
+    "icon": " bi bi-view-list",
     "categ": "comelliblock",
     "usesInner": true,
     "attrs": {

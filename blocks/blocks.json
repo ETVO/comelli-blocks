@@ -4,6 +4,12 @@
     "blocks": [
         {
             "path": "./hero/"
+        },
+        {
+            "path": "./title/"
+        },
+        {
+            "path": "./slider/"
         }
     ]
 }

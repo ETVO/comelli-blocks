@@ -1,15 +1,11 @@
 {
-    "slug": "banner",
-    "title": "Banner",
-    "desc": "Banner do Hero Carrossel",
+    "slug": "title",
+    "title": "Título",
+    "desc": "Banner de Título",
     "icon": " bi bi-view-list",
     "categ": "comelliblock",
-    "parent": "hero",
     "attrs": {
         "title": {
-            "type": "string"
-        },
-        "action": {
             "type": "string"
         },
         "image": {
@@ -26,13 +22,6 @@
             "type": "text",
             "attr": "title",
             "label": "Título"
-        },
-        {
-            "tag": "input",
-            "type": "url",
-            "attr": "action",
-            "label": "Link do Botão",
-            "help": "Deixe em branco para ocultar"
         },
         {
             "tag": "title",
