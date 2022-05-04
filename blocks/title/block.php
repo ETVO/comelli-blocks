@@ -13,7 +13,7 @@ function render_block_title($attributes)
             <div class="overlay position-absolute top-0 w-100 h-100 d-flex">
                 <div class="container d-flex">
                     <div class="inner">
-                        <h1 class="title"><?php echo $title; ?></h1>
+                        <h1 class="title text-break"><?php echo $title; ?></h1>
                     </div>
                 </div>
             </div>

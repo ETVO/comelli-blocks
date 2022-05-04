@@ -12,7 +12,7 @@
 
     .overlay {
         padding: 2rem 0;
-        background-color: rgba(#243740, 0.65);
+        background-color: rgba(#243740, 0.60);
 
         .inner {
             margin: auto;
@@ -33,6 +33,19 @@
             .inner {
                 .title {
                     letter-spacing: 5.7px;
+                    font-size: calc(1.25rem + 0.9vw);
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 450px) {
+    .comelli-title {
+        .overlay {
+            .inner {
+                .title {
+                    letter-spacing: unset;
                 }
             }
         }

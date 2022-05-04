@@ -7,6 +7,7 @@ $tilt-md: 10vh;
 .comelli-slider {
     .content {
         background: #4d5e66;
+        // opacity: .75;
         padding: calc($tilt + 1rem) 0 calc($tilt + 2rem);
         clip-path: polygon(0% $tilt, 100% 0%, 100% calc(100% - $tilt), 0% 100%);
 
@@ -14,7 +15,7 @@ $tilt-md: 10vh;
             color: #ffe14d;
             font-weight: 500;
             letter-spacing: -1.12px;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             font-size: calc(1.75rem + 1.25vw);
         }
 
@@ -75,25 +76,33 @@ $tilt-md: 10vh;
 }
 
 @media all and (max-width: 1200px) {
-    .short-sbpe {
+    .comelli-slider {
         .content {
             padding: calc($tilt-lg + 2rem) 0 calc($tilt-lg + 1rem);
+            clip-path: polygon(0% $tilt-lg, 100% 0%, 100% calc(100% - $tilt-lg), 0% 100%);
         }
     }
 }
 
 @media all and (max-width: 992px) {
-    .short-sbpe {
+    .comelli-slider {
         .content {
             padding: calc($tilt-md + 2rem) 0 calc($tilt-md + 1rem);
+            clip-path: polygon(0% $tilt-md, 100% 0%, 100% calc(100% - $tilt-md), 0% 100%);
         }
     }
 }
 
 @media all and (max-width: 576px) {
-    .short-sbpe {
+    .comelli-slider {
         .content {
-            padding: calc($tilt-md + 3rem) 0 calc($tilt-md + 2rem);
+            padding: calc($tilt-md + 2rem) 0 calc($tilt-md + 1rem);
+
+            .carousel {
+                .carousel-inner {
+                    width: 100%;
+                }
+            }
         }
     }
 }
