@@ -14,6 +14,9 @@
         },
         "image": {
             "type": "string"
+        },
+        "mobile_image": {
+            "type": "string"
         }
     },
     "edit": [
@@ -43,6 +46,12 @@
             "type": "image",
             "attr": "image",
             "label": "Imagem de fundo"
+        },
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "mobile_image",
+            "label": "Imagem de fundo p/ mobile"
         }
     ]
 }
