@@ -1,0 +1,27 @@
+{
+    "slug": "caracters",
+    "title": "Características",
+    "desc": "Características do Empreendimento, em ícones",
+    "icon": " bi bi-view-list",
+    "categ": "comelliblock",
+    "usesInner": true,
+    "attrs": {
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Características"
+        },
+        {
+            "tag": "input",
+            "type": "inner",
+            "blocks": [ "comelliblock/carac" ],
+            "label": "Características"
+        }
+    ],
+    "children": [
+        {
+            "path": "carac/"
+        }
+    ]
+}

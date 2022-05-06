@@ -1,0 +1,46 @@
+.comelli-carac {
+    display: flex;
+    padding: 1rem;
+
+    .inner {
+        margin: auto;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+
+        img {
+            margin-bottom: 1rem;
+            width: 3rem;
+            height: 3rem;
+            object-fit: contain;
+            object-position: center;
+        }
+    
+        .name {
+            font-weight: 600;
+            max-width: 80%;
+            margin: auto;
+        }
+    }
+}
+
+@media all and (max-width: 992px) {
+    .comelli-carac {
+    
+        .inner {
+            .name {
+                max-width: unset;
+            }
+        }
+    }
+    
+}
+
+
+@media all and (max-width: 400px) {
+    .comelli-carac {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        width: 100% !important;
+    }
+}

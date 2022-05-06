@@ -1,0 +1,38 @@
+{
+    "slug": "carac",
+    "title": "Característica",
+    "desc": "Característica",
+    "icon": " bi bi-view-list",
+    "categ": "comelliblock",
+    "parent": "caracters",
+    "attrs": {
+        "title": {
+            "type": "string"
+        },
+        "icon": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "title",
+            "title": "Conteúdo"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "title",
+            "label": "Título"
+        },
+        {
+            "tag": "title",
+            "title": "Ícone"
+        },
+        {
+            "tag": "input",
+            "type": "image",
+            "attr": "icon",
+            "label": "Ícone"
+        }
+    ]
+}
