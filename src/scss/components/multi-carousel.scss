@@ -29,19 +29,19 @@
             .carousel-item {
                 &-end.active,
                 &-next {
-                    transform: translateX(33%);
+                    transform: translateX(50%);
                 }
 
                 &-start.active,
                 &-prev {
-                    transform: translateX(-33%);
+                    transform: translateX(-50%);
                 }
             }
         }
     }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 768px) {
     .multi-carousel {
         .carousel-inner {
             .carousel-item > div {

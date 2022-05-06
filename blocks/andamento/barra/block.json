@@ -1,0 +1,31 @@
+{
+    "slug": "barra",
+    "title": "Barra",
+    "desc": "Porcentagem e Descrição",
+    "icon": " bi bi-view-list",
+    "categ": "comelliblock",
+    "parent": "andamento",
+    "attrs": {
+        "desc": {
+            "type": "string"
+        },
+        "percent": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "desc",
+            "label": "Descrição"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "percent",
+            "label": "Porcentagem de progresso",        
+            "help": "Apenas números!"        
+        }
+    ]
+}

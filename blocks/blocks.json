@@ -16,6 +16,21 @@
         },
         {
             "path": "./caracters/"
+        },
+        {
+            "path": "./photos/"
+        },
+        {
+            "path": "./plantas/"
+        },
+        {
+            "path": "./andamento/"
+        },
+        {
+            "path": "./book/"
+        },
+        {
+            "path": "./local/"
         }
     ]
 }

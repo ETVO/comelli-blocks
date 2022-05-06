@@ -1,0 +1,30 @@
+{
+    "slug": "ref",
+    "title": "Referência",
+    "desc": "Porcentagem e Descrição",
+    "icon": " bi bi-view-list",
+    "categ": "comelliblock",
+    "parent": "local",
+    "attrs": {
+        "name": {
+            "type": "string"
+        },
+        "distance": {
+            "type": "string"
+        }
+    },
+    "edit": [
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "name",
+            "label": "Nome"
+        },
+        {
+            "tag": "input",
+            "type": "text",
+            "attr": "distance",
+            "label": "Distância"        
+        }
+    ]
+}

@@ -1,12 +1,14 @@
 {
-    "slug": "caracters",
-    "title": "Características",
-    "desc": "Características do Empreendimento, em ícones",
+    "slug": "book",
+    "title": "Book",
+    "desc": "Book do Empreendimento",
     "icon": " bi bi-view-list",
     "categ": "comelliblock",
-    "usesInner": true,
     "attrs": {
         "title": {
+            "type": "string"
+        },
+        "image": {
             "type": "string"
         }
     },
@@ -23,18 +25,13 @@
         },
         {
             "tag": "title",
-            "title": "Características"
+            "title": "Imagem"
         },
         {
             "tag": "input",
-            "type": "inner",
-            "blocks": [ "comelliblock/carac" ],
-            "label": "Características"
-        }
-    ],
-    "children": [
-        {
-            "path": "carac/"
+            "type": "image",
+            "attr": "image",
+            "label": "Imagem"
         }
     ]
 }

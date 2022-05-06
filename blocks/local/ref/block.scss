@@ -1,0 +1,21 @@
+.comelli-ref {
+    display: flex;
+    font-size: .9rem;
+
+    & > * {
+        margin: auto 0;
+    }
+
+    .icon {
+        margin-right: .25rem;
+        color: #A5AEB2;
+    }
+    
+    .name {
+        margin-right: .25rem;
+    }
+    
+    .distance {
+        font-weight: 600;
+    }
+}

@@ -19,7 +19,7 @@
             display: flex;
 
             p {
-                padding: 0 4rem ;
+                padding: 0 calc(1rem + 3vw);
                 margin: auto;
                 font-weight: 500;
 
@@ -37,7 +37,7 @@
         .container {
             .text {
                 p {
-                    padding: 0 .75rem;
+                    padding: 1rem .75rem 0;
                 }
             }
         }

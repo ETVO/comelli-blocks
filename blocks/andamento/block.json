@@ -1,7 +1,7 @@
 {
-    "slug": "caracters",
-    "title": "Características",
-    "desc": "Características do Empreendimento, em ícones",
+    "slug": "andamento",
+    "title": "Andamento",
+    "desc": "Barras de progresso",
     "icon": " bi bi-view-list",
     "categ": "comelliblock",
     "usesInner": true,
@@ -12,10 +12,6 @@
     },
     "edit": [
         {
-            "tag": "title",
-            "title": "Conteúdo"
-        },
-        {
             "tag": "input",
             "type": "text",
             "attr": "title",
@@ -23,18 +19,18 @@
         },
         {
             "tag": "title",
-            "title": "Características"
+            "title": "Barras"
         },
         {
             "tag": "input",
             "type": "inner",
-            "blocks": [ "comelliblock/carac" ],
-            "label": "Características"
+            "blocks": [ "comelliblock/barra" ],
+            "label": "Barras"
         }
     ],
     "children": [
         {
-            "path": "carac/"
+            "path": "barra/"
         }
     ]
 }

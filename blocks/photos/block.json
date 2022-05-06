@@ -1,13 +1,15 @@
 {
-    "slug": "caracters",
-    "title": "Características",
-    "desc": "Características do Empreendimento, em ícones",
+    "slug": "photos",
+    "title": "Fotos",
+    "desc": "Fotos do Empreendimento",
     "icon": " bi bi-view-list",
     "categ": "comelliblock",
-    "usesInner": true,
     "attrs": {
         "title": {
             "type": "string"
+        },
+        "images": {
+            "type": "array"
         }
     },
     "edit": [
@@ -23,18 +25,13 @@
         },
         {
             "tag": "title",
-            "title": "Características"
+            "title": "Imagens"
         },
         {
             "tag": "input",
-            "type": "inner",
-            "blocks": [ "comelliblock/carac" ],
-            "label": "Características"
-        }
-    ],
-    "children": [
-        {
-            "path": "carac/"
+            "type": "gallery",
+            "attr": "images",
+            "label": "Imagens"
         }
     ]
 }

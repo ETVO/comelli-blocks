@@ -1,7 +1,7 @@
 {
-    "slug": "caracters",
-    "title": "Características",
-    "desc": "Características do Empreendimento, em ícones",
+    "slug": "plantas",
+    "title": "Plantas",
+    "desc": "Plantas do Empreendimento",
     "icon": " bi bi-view-list",
     "categ": "comelliblock",
     "usesInner": true,
@@ -23,18 +23,18 @@
         },
         {
             "tag": "title",
-            "title": "Características"
+            "title": "Plantas"
         },
         {
             "tag": "input",
             "type": "inner",
-            "blocks": [ "comelliblock/carac" ],
-            "label": "Características"
+            "blocks": [ "comelliblock/planta" ],
+            "label": "Plantas"
         }
     ],
     "children": [
         {
-            "path": "carac/"
+            "path": "planta/"
         }
     ]
 }

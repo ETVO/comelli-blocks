@@ -1,0 +1,31 @@
+@import "./planta/block.scss";
+
+.comelli-plantas {
+    clip-path: polygon(0% $tilt, 100% 0%, 100% calc(100% - $tilt), 0% 100%);
+    padding: calc($tilt + 2rem) 0 calc($tilt + 3rem);
+    background-color: #BBC2C5;
+
+    .container {
+        .title {
+            text-align: center;
+            font-size: calc(1.5rem + 1.5vw);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .comelli-plantas {
+        clip-path: polygon(0% $tilt-lg, 100% 0%, 100% calc(100% - $tilt-lg), 0% 100%);
+        padding: calc($tilt-lg + 2rem) 0;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .comelli-plantas {
+        clip-path: polygon(0% $tilt-md, 100% 0%, 100% calc(100% - $tilt-md), 0% 100%);
+        padding: calc($tilt-md + 1.5rem) 0;
+    }
+}
+

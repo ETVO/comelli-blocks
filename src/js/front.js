@@ -125,7 +125,7 @@
             let items = document.querySelectorAll('.multi-carousel .carousel-item')
 
             items.forEach((el) => {
-                const minPerSlide = 3;
+                const minPerSlide = 2;
                 let next = el.nextElementSibling;
                 for (var i=1; i<minPerSlide; i++) {
                     // if(next == el) return;
