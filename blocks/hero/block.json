@@ -6,8 +6,23 @@
     "categ": "comelliblock",
     "usesInner": true,
     "attrs": {
+        "interval": {
+            "type": "string"
+        }
     },
     "edit": [
+        {
+            "tag": "title",
+            "title": "Temporizador"
+        },
+        {
+            "tag": "input",
+            "type": "number",
+            "attr": "interval",
+            "label": "Tempo (segundos)",
+            "value": "7",
+            "help": "Insira '0' para desabilitar o temporizador"
+        },
         {
             "tag": "title",
             "title": "Banners"

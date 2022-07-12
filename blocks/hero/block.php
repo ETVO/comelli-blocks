@@ -3,8 +3,11 @@
 function render_block_hero($attributes, $content)
 {
 
-    $auto_slide = false;
-    $interval = 5000;
+    $interval = $attributes['interval'];
+    if($interval == '') $interval = 7000;
+    else $interval *= 1000; 
+
+    $auto_slide = ($interval != 0);
 
     $block_id = 'comelli-hero' . rand(0, 100);
 

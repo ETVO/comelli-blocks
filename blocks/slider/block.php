@@ -4,8 +4,8 @@ function render_block_slider($attributes, $content)
 {
     $title = $attributes['title'];
     
-    $auto_slide = false;
-    $interval = 5000;
+    $auto_slide = true;
+    $interval = 7000;
 
     $id = 'slider' . rand(0, 999);
 
